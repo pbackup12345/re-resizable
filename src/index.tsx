@@ -446,6 +446,8 @@ export class Resizable extends React.Component<ResizableProps, State> {
       return;
     }
     const element = document.createElement('div');
+    // tslint:disable-next-line: prettier
+    element.setAttribute('contenteditable', false as any);
     element.style.width = '100%';
     element.style.height = '100%';
     element.style.position = 'absolute';

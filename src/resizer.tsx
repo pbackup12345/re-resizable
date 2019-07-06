@@ -81,6 +81,7 @@ export interface Props {
 export function Resizer(props: Props) {
   return (
     <div
+      contentEditable={false}
       className={props.className || ''}
       style={{
         position: 'absolute',
